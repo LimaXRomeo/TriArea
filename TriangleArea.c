@@ -20,7 +20,7 @@ int main()
 		t = d * (d - a) * (d - b) * (d - c);
 		s = sqrt(t);
 		printf("\nS=%lg\n\n", s);
-		printf("Type 0 and then ENTER to exit, or type 1 then ENTER to continue.\n");
+		printf("Type 0 and then ENTER to exit\Type 1 then ENTER to continue.\n");
 	loop:scanf_s("%d", &k);
 		if (k == 0)
 		{
