@@ -2,7 +2,7 @@
 #include <math.h>
 int main()
 {
-    double a,b,c,d,s,t;
+    long double a,b,c,d,s,t;
     int e,i=1;
     printf("\n--------- TriangleArea ---------\n          By LimaXRomeo         \n");
     printf("Please input the lengths of three sides of your triangle.\nI'll tell you its area.\n");
