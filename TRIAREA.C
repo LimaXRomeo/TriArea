@@ -3,11 +3,9 @@
 int main()
 {
     double a,b,c,d,s,t;
-    int e,i=1;
     printf("\n--------- TriangleArea ---------\n          By LimaXRomeo         \n");
-    printf("Please input the lengths of three sides of your triangle.\nI'll tell you its area.\n");
-    while (i==1)
-    {
+    printf("Please enter the lengths of three sides.\n");
+    do{
 	printf("a=");
 	scanf("%lg", &a);
 	printf("b=");
@@ -18,21 +16,6 @@ int main()
 	t=d*(d-a)*(d-b)*(d-c);
 	s=sqrt(t);
 	printf("\nS=%lg\n", s);
-	printf("Type 0 and then ENTER to exit, or type 1 then ENTER to continue.\n");
-    loop:scanf("%d",&e);
-	if (e==0)
-	{
-	    return 0;
-	}
-	else if(e==1)
-	{
-	    printf("\nContinue.\n");
-	}
-	else
-	{
-	    printf("Invalid!\n");
-	    goto loop;
-	}
-    }
-return 0;
+	printf("Press 5 to continue, or press ENTER to exit\n");
+    }while(getch()=='5');
 }
